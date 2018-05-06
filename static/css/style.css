@@ -1,0 +1,106 @@
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+}
+
+.container {
+	max-width: 700px;
+	padding-bottom: 90px;
+}
+
+.heading {
+	text-align: center;
+	margin-top: 1em;
+	font-weight: bold;
+	font-size: 45px;
+	letter-spacing: -0.03em;
+	text-transform: lowercase;
+	margin-bottom: 0;
+	color: #E91E63;
+	/*color: #ffc3d3;*/
+}
+
+.subheading {
+	text-align: center;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 1.2;
+	color: #333;
+}
+
+
+.stats {
+	padding: 30px 0;
+}
+
+.stat {
+	text-align: center;
+}
+
+.stat dt {
+	color: #bbb;
+	font-weight: normal;
+}
+
+.stat dd {
+	font-size: 19px;
+}
+
+h3 {
+	font-size: 19px;
+	margin-top: 60px;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+
+pre {
+	word-wrap: break-word;
+	white-space: pre-wrap; 
+	border: 1px solid #ddd;
+	padding: 5px 10px;
+}
+
+/*.stat */
+
+
+/*@media (min-width: 1200px)
+.container {
+    max-width: 960px;
+}
+@media (min-width: 992px)
+.container {
+    max-width: 960px;
+}*/
+/*
+.heading {
+	text-align: center;
+	width: 100%;
+	font-style: italic;
+	text-transform: uppercase;
+	text-transform: lowercase;
+	font-weight: bold;
+	letter-spacing: -0.02em;
+	margin-top: 20vh;
+	margin-bottom: 1em;
+	color: pink;
+	color: #ffc3d3;
+}
+
+.intro {
+	text-align: center;
+}
+
+.code-wrapper {
+	background-color: rgba(255, 255, 255, 0.9);
+	background-color: #fff;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12), 0 1px 2px rgba(255, 255, 255, 0.24);
+}
+
+code {
+	background-color: #fff;
+	display: block;
+	padding: 1em 1em;
+	color: #333;
+	margin-bottom: 3em;
+
+}*/

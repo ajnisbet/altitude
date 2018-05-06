@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h1 class="heading">Altitude</h1>
+                    <h2 class="subheading">Topographical Elevation API</h2>
+                </div>
+            </div>
+            <div class="row stats">
+                <div class="col-sm">
+                    <dl class="stat">
+                        <dt>Resolution</dt>
+                        <dd>1′ (~1.8km)</dd>
+                    </dl>
+                    <!-- Resulotion -->
+                </div>
+                <div class="col-sm">
+                    <dl class="stat">
+                        <dt>Extent</dt>
+                        <dd>-90,-180 → 90,180</dd>
+                    </dl>
+                </div>
+                <div class="col-sm">
+                    <dl class="stat">
+                        <dt>Datum</dt>
+                        <dd>WGS 84</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <p>Altitude is a free elevation JSON API. There are no usage restrictions on the results.</p>
+                    <p>Data is taken from the <a href="https://www.ngdc.noaa.gov/mgg/global/global.html">ETOPO1 ICE</a> 1 arc-minute dataset. In addition to land topography, bathymetry is given for ocean locations, and ice surface height is given for the Antarctic and Greenland ice sheets.</p>
+                    <p>The elevation value is linearly interpolated from the surrounding four grid points.</p>
+                    <h3>Usage</h3>
+                    <p>The API has a single endpoint, which is compatible with the Google Elevation API.</p>
+                    <pre><code>GET https://altitude.andrewnisbet.nz/api/v1/json?locations=37.43831,-122.16416|37.32056,-122.21364</code></pre>
+                    <p>The response returns the elevation in metres for each point.</p>
+                    <pre><code>{
+    "results": [
+        {
+            "elevation": 12, 
+            "location": {
+                "lat": 37.43831, 
+                "lon": -122.16416
+            }, 
+            "resolution": 1800
+        }, 
+        {
+            "elevation": 500, 
+            "location": {
+                "lat": 37.32056, 
+                "lon": -122.21364
+            }, 
+            "resolution": 1800
+        }
+    ], 
+    "status": "OK"
+}</code></pre>
+
+                    <p>Try it out: <a href="/api/v1/json?locations=37.43831,-122.16416|37.32056,-122.21364">/api/v1/json?locations=37.43831,-122.16416|37.32056,-122.21364</a>.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
