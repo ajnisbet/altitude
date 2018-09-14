@@ -1,3 +1,9 @@
+<!--
+* List of features
+* Pricing
+* Quick start
+* Blog
+ -->   
 <!doctype html>
 <html>
     <head>
@@ -8,7 +14,189 @@
         <link rel="stylesheet" href="/static/css/style.css">
     </head>
     <body>
-        <div class="container">
+        
+        <section class="top-section">
+            <div class="container">
+                <nav class="row topnav">
+                    <div class="col-md-5">
+                        <a href="#!" class="topnav-brand">Altitude</a>
+                    </div>
+                    <div class="col-md-7 text-md-right">
+                        <ul class="topbar-items">
+                            <li class="topbar-item"><a href="#!" class="topbar-link">Home</a></li>
+                            <li class="topbar-item"><a href="#!" class="topbar-link">Docs</a></li>
+                            <li class="topbar-item"><a href="#!" class="topbar-link">Pricing</a></li>
+                            <li class="topbar-item"><a href="#!" class="topbar-link">Log in</a></li>
+                            <li class="topbar-item"><a href="#!" class="topbar-link">Sign up</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="row intro">
+                    <div class="col-md-6">
+                        <h1>High-resolution elevation API with worldwide coverage.</h1>
+                        <p>Altitude provides elevation data above the sea level for any location on Earth’s surface. The Elevation API allows you to retrieve sampled elevation data along a path. This can be useful for hiking, biking or motorcycling applications.</p>
+                        <p>Altitude provides digital elevation model (DEM) data as the result of a query. The elevation service data has many applications when combined with other routing and navigation data, including computing the steepness of edges or generating an elevation profile along a route.</p>
+                        <a href="#!" class="btn btn-primary">Get an API key</a>
+                    </div>
+                    <div class="col-md-5 offset-md-1">
+                        <pre># Mountain View, CA
+GET https://api.altitude.com/v1/78.45654,36.345345</pre><hr>
+                        <pre>{
+    "elevation": 12, 
+    "location": {
+        "lat": 37.43831, 
+        "lon": -122.16416
+    }, 
+    "resolution": 1800
+}</pre>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <h2 class="section-heading">Features</h2>
+                <div class="row">
+                    <div class="col-md-4 feature">
+                        <img src="/static/img/icons8-uv/globe-asia.png" alt="" class="features-icon">
+                        <h3>Global coverage</h3>
+                        <p>Bathymetry, artic, and artartic are all included in our 5TB dataset.</p>
+                    </div>
+                    <div class="col-md-4 feature">
+                        <img src="/static/img/icons8-uv/layers.png" alt="" class="features-icon">
+                        <h3>High resolution</h3>
+                        <p>100m base resolution, with high resolution LIDAR data up to 1m where available.</p>
+                    </div>
+                    <div class="col-md-4 feature">
+                        <!-- <img src="/static/img/icons8-uv/api.png" alt="" class="features-icon"> -->
+                        <img src="/static/img/icons8-uv/cloud.png" alt="" class="features-icon">
+                        <h3>Maintenace free</h3>
+                        <p>We take care of storing, processing, and updating data so you don't have to.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-section">
+            <div class="container">
+                <h2 class="section-heading">Pricing</h2>
+                <p>Want some free quota for evalution? Just <a href="#!">reach out to us</a>!</p>
+                <div class="row">
+                    <div class="col-md-3 offset-md-2 price text-center">
+                        <div class="card">
+                            <div class="card-header">Standard</div>
+                            <div class="card-body">
+                                <h2>$0.53 <span class="text-muted">/ 1000 requests</span></h2>
+                                <ul class="list-unstyled">
+                                    <li>Email support</li>
+                                    <li>10 requests / second</li>
+                                </ul>
+                                <a href="#!" class="btn btn-primary">Get an API key</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 offset-md-2 price text-center">
+                        <div class="card">
+                            <div class="card-header">Enterprise</div>
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li>Priority support</li>
+                                    <li>High request limit</li>
+                                    <li>Fixed pricing option</li>
+                                    <li>SLA</li>
+                                </ul>
+                                <a href="#!" class="btn btn-primary">Contact us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="get-started-section">
+            <div class="container">
+                <h2 class="section-heading">Get Started</h2>
+                <p>See the <a href="#!">full docs</a> for batch requests, Google Maps Elevation compatability, and more.</p>
+                    <pre>Python  Javascript  Bash  Java  </pre>
+                <hr>
+                <div>
+                    
+                <pre>import requests
+
+url = 'https://api.newrecruit.io/v0/parse'
+path = 'resume.pdf'
+api_key = '3ax6xnjp29jd6fds4gc373sgvjxteol0'
+
+
+result = requests.post(
+    url,
+    files = {'file': open(path, 'rb')},
+    headers = {'x-api-key': api_key},
+)
+</pre>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-section">
+            <div class="container">
+                <h2 class="section-heading">Hot off the press</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Migrating from the Google Maps Elevation API.</h4>
+                                <div class="text-muted">14 Sep 2018</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro suscipit mollitia vel quibusdam necessitatibus molestiae facilis, nam a quidem excepturi eos sequi voluptates accusantium deserunt nostrum autem nisi! Inventore, distinctio?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Smoothing DEM data.</h4>
+                                <div class="text-muted">9 Aug 2018</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores necessitatibus, omnis dolorum, dolorem deleniti delectus nostrum, maxime reprehenderit, aut natus ducimus praesentium. Nihil ad eius aut quae eveniet nostrum voluptate!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>altitude.com</h5>
+                        <p>Altitude is a API for digital elevation model (DEM) data. Made by Andrew Consulting.</p>
+                    </div>
+                    <div class="col-md-3 offset-md-1">
+                        <h6>Pages</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#!">Pricing</a></li>
+                            <li><a href="#!">Log in</a></li>
+                            <li><a href="#!">Sign up</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 offset-md-1">
+                        <h6>Company</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#!">About</a></li>
+                            <li><a href="#!">Contact us</a></li>
+                            <li><a href="#!">Privacy policy</a></li>
+                            <li><a href="#!">Terms and conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <div class="container">
             <div class="row">
                 <div class="col-sm">
                     <h1 class="heading">Altitude</h1>
@@ -70,5 +258,5 @@
                 </div>
             </div>
         </div>
-    </body>
+    </body> -->
 </html>

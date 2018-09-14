@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-
+xdg-open 'http://localhost:8087' & \
 python /opt/google-cloud-sdk/platform/google_appengine/dev_appserver.py "${BASH_SOURCE%/*}/app.yaml" \
- --port 8082 \
- --admin_port 8002 \
- --storage_path /tmp/delta-z-203221
+ --port 8087 \
+ --admin_port 8007 \
+ --storage_path /tmp/altitude-203221
