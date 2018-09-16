@@ -1,25 +1,19 @@
-<!--
-* List of features
-* Pricing
-* Quick start
-* Blog
- -->   
 <!doctype html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Altitude - Elevation API</title>
+        <title>TopoData - Elevation API</title>
         <link rel="stylesheet" href="/static/css/bootstrap.min.css">
         <link rel="stylesheet" href="/static/css/style.css">
     </head>
     <body>
         
         <section class="top-section">
-            <div class="container">
-                <nav class="row topnav">
+            <div class="container container-wide">
+                <nav class="row topbar">
                     <div class="col-md-5">
-                        <a href="#!" class="topnav-brand">Altitude</a>
+                        <a href="#!" class="topbar-brand">topodata.io</a>
                     </div>
                     <div class="col-md-7 text-md-right">
                         <ul class="topbar-items">
@@ -33,14 +27,32 @@
                 </nav>
                 <div class="row intro">
                     <div class="col-md-6">
-                        <h1>High-resolution elevation API with worldwide coverage.</h1>
-                        <p>Altitude provides elevation data above the sea level for any location on Earth’s surface. The Elevation API allows you to retrieve sampled elevation data along a path. This can be useful for hiking, biking or motorcycling applications.</p>
-                        <p>Altitude provides digital elevation model (DEM) data as the result of a query. The elevation service data has many applications when combined with other routing and navigation data, including computing the steepness of edges or generating an elevation profile along a route.</p>
-                        <a href="#!" class="btn btn-primary">Get an API key</a>
+                        <h1 class="intro-heading">High-resolution elevation API with worldwide coverage.</h1>
+                        <p class="intro-blurb">TopoData serves digital elevation model (DEM) data over a RESTful API.</p>
+                        <p class="intro-blurb">The service can be used to give a user's current altitude, computing steepness, and generating elevation profiles for routes.</p>
+                        <a href="#!" class="btn btn-primary intro-btn">Get an API key</a>
                     </div>
                     <div class="col-md-5 offset-md-1">
+                        <div class="intro-code">
+                            <pre class="intro-code-request"><span class="c-comment"># Elevation of Mountain View, CA.</span>
+<span class="c-verb">GET</span> <span class="c-url">/v1/elevation/78.456,36.345</span></pre>
+<!-- <span class="c-verb">GET</span> <span class="c-url">https://api.topodata.io/v1/elevation/78.456,36.345</span></pre> -->
+<hr class="intro-code-divider"><pre class="intro-code-response">{
+    <span class="c-string">"elevation"</span>: <span class="c-numeric">12, </span>
+    <span class="c-string">"location"</span>: {
+        <span class="c-string">"lat"</span>: <span class="c-numeric">37.43831, </span>
+        <span class="c-string">"lon"</span>: <span class="c-numeric">-122.16416</span>
+    }, 
+    <span class="c-string">"resolution"</span>: <span class="c-numeric">1800</span>
+}</pre>
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+                <!--             
                         <pre># Mountain View, CA
-GET https://api.altitude.com/v1/78.45654,36.345345</pre><hr>
+GET https://api.topodata.io/v1/elevation/78.456,36.345</pre><hr>
                         <pre>{
     "elevation": 12, 
     "location": {
@@ -51,30 +63,44 @@ GET https://api.altitude.com/v1/78.45654,36.345345</pre><hr>
 }</pre>
                     </div>
                 </div>
+                        </div>
+ -->
 
-
-            </div>
-        </section>
 
         <section class="features-section">
             <div class="container">
                 <h2 class="section-heading">Features</h2>
                 <div class="row">
                     <div class="col-md-4 feature">
-                        <img src="/static/img/icons8-uv/globe-asia.png" alt="" class="features-icon">
-                        <h3>Global coverage</h3>
-                        <p>Bathymetry, artic, and artartic are all included in our 5TB dataset.</p>
+                        <img src="/static/img/icons8-uv/globe-asia.png" alt="" class="feature-icon">
+                        <h3 class="feature-heading">Global coverage</h3>
+                        <p class="feature-description">Our 5TB dataset covers the whole globe, including arctic and antarctic regions.</p>
                     </div>
                     <div class="col-md-4 feature">
-                        <img src="/static/img/icons8-uv/layers.png" alt="" class="features-icon">
-                        <h3>High resolution</h3>
-                        <p>100m base resolution, with high resolution LIDAR data up to 1m where available.</p>
+                        <img src="/static/img/icons8-uv/layers.png" alt="" class="feature-icon">
+                        <h3 class="feature-heading">High resolution</h3>
+                        <p class="feature-description">100m base resolution, with high resolution LIDAR data up to 1m where available.</p>
                     </div>
                     <div class="col-md-4 feature">
-                        <!-- <img src="/static/img/icons8-uv/api.png" alt="" class="features-icon"> -->
-                        <img src="/static/img/icons8-uv/cloud.png" alt="" class="features-icon">
-                        <h3>Maintenace free</h3>
-                        <p>We take care of storing, processing, and updating data so you don't have to.</p>
+                        <!-- <img src="/static/img/icons8-uv/api.png" alt="" class="feature-icon"> -->
+                        <img src="/static/img/icons8-uv/cloud.png" alt="" class="feature-icon">
+                        <h3 class="feature-heading">Maintenance free</h3>
+                        <p class="feature-description">We take care of storing, processing, and updating data so you don't have to.</p>
+                    </div>
+                    <div class="col-md-4 feature">
+                        <img src="/static/img/icons8-uv/marker.png" alt="" class="feature-icon">
+                        <h3 class="feature-heading">Google compatible</h3>
+                        <p class="feature-description">We have endpoints supporting the Google Elevation API syntax, for easy migration.</p>
+                    </div>
+                    <div class="col-md-4 feature">
+                        <img src="/static/img/icons8-uv/aquarium.png" alt="" class="feature-icon">
+                        <h3 class="feature-heading">Bathymetry</h3>
+                        <p class="feature-description">Underwater depth can be given for oceans and lakes.</p>
+                    </div>
+                    <div class="col-md-4 feature">
+                        <img src="/static/img/icons8-uv/help.png" alt="" class="feature-icon">
+                        <h3 class="feature-heading">Support</h3>
+                        <p class="feature-description">We're always available to help. Email <a href="#!">support@topodata.io</a> any time.</p>
                     </div>
                 </div>
             </div>
@@ -83,10 +109,28 @@ GET https://api.altitude.com/v1/78.45654,36.345345</pre><hr>
         <section class="pricing-section">
             <div class="container">
                 <h2 class="section-heading">Pricing</h2>
-                <p>Want some free quota for evalution? Just <a href="#!">reach out to us</a>!</p>
+                <p class="pricing-intro">We offer one simple, usage-based pricing plan.</p>
                 <div class="row">
+                    <div class="pricing-price col-md-4 offset-md-4">
+                        <div class="pricing-meat">
+                            <span class="pricing-amount">$0.05</span> <span class="pricing-unit"> / 1,000 requests</span>
+                        </div>
+                        <ul class="list-unstyled pricing-details">
+                            <li class="pricing-detail">First 2,500 requests per day are free.</li>
+                            <li class="pricing-detail">Email support.</li>
+                            <li class="pricing-detail">Max 10 requests per second.</li>
+                        </ul>
+                        <a href="#!" class="btn btn-primary intro-btn">Get an API key</a>
+                        <!-- <span class="pricing-amount">$0</span> <span class="pricing-unit">first 2500 requests / day</span> -->
+                        <!-- <br> <span class="pricing-amount">+</span> <br> -->
+                    </div>
+                </div>
+                    
+                </div>
+
+                <div class="row pricing-prices">
                     <div class="col-md-3 offset-md-2 price text-center">
-                        <div class="card">
+                        <div class="price-name">Standard</div>
                             <div class="card-header">Standard</div>
                             <div class="card-body">
                                 <h2>$0.53 <span class="text-muted">/ 1000 requests</span></h2>
@@ -95,7 +139,6 @@ GET https://api.altitude.com/v1/78.45654,36.345345</pre><hr>
                                     <li>10 requests / second</li>
                                 </ul>
                                 <a href="#!" class="btn btn-primary">Get an API key</a>
-                            </div>
                         </div>
                     </div>
                     <div class="col-md-3 offset-md-2 price text-center">
@@ -113,6 +156,7 @@ GET https://api.altitude.com/v1/78.45654,36.345345</pre><hr>
                         </div>
                     </div>
                 </div>
+                <p class="pricing-blurb">Want some free quota for evalution? Just <a href="#!">reach out to us</a>!</p>
             </div>
         </section>
 
