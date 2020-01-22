@@ -149,6 +149,7 @@ body {
 	}
 
 	.feature-icon {
+		filter: hue-rotate(30deg);
 		max-width: 50px;
 		max-height: 50px;
 		margin-bottom: 15px;
@@ -175,11 +176,22 @@ body {
 		box-shadow: 0 1px 3px rgba(50,50,93,.15), 0 1px 0 rgba(0,0,0,.02);
 		border-radius: 5px;
 		background-color: #fff;
-		padding: 10px;
+		padding: 10px 0 15px;
+	}
+
+	.pricing-name {
+		text-transform: uppercase;
+		font-weight: 600;
+		color: #888;
+		letter-spacing: 1px;
+		font-size: 12px;
 	}
 
 	.pricing-meat {
-		padding-bottom: 15px;
+		padding: 15px 0 15px;
+		line-height: 60px;
+		display: inline-block;
+		height: 90px;
 
 	}
 	.pricing-amount {
@@ -189,11 +201,19 @@ body {
 
 	.pricing-unit {
 		color: #888;
-		font-size: 30px;
+		/*font-size: 30px;*/
 	}
 
 	.pricing-detail {
 		padding-bottom: 5px;
+	}
+
+	.pricing-btn {
+		margin-top: 0;
+	}
+
+	.pricing-blurb {
+		padding-top: 30px;
 	}
 
 .get-started-section {
@@ -201,10 +221,76 @@ body {
 	background-color: #ffffff;
 }
 
+
+.codewindow {
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 50px 0px;
+  background-color: #333333;
+  border-radius: 5px 5px 0 0;
+}
+
+.codewindow-header {
+  background-image: linear-gradient(#555555, #444444);
+  border: 1px solid #444;
+  border-bottom: 1px solid #444444;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px 5px 0 0;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px;
+  font-size: 15px;
+  line-height: 45px;
+  padding-left: 20px;
+}
+  .codewindow-header li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+}
+    .codewindow-header li a {
+      color: inherit;
+      text-decoration: none;
+      padding: 5px 15px;
+  }
+    .codewindow-header li:not(:last-child) {
+      padding-right: 5px;
+  }
+  .codewindow-header .selected {
+    background-image: linear-gradient(#222222, #444444);
+    border-radius: 5px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.codewindow-main {
+  padding-left: 20px;
+  display: none;
+}
+  .codewindow-main .p {
+    color: #F92672;
+}
+  .codewindow-main .y {
+    color: #e6db74;
+}
+  .codewindow-main .b {
+    color: #66D9EF;
+}
+  .codewindow-main .o {
+    color: #FD971F;
+}
+
+.codewindow-main--visible {
+  display: block;
+}
+
 .footer-section {
 	background-color: #333;
 	color: #ccc;
 }
+
+
+
+
+
 /* 
 .container {
 	max-width: 700px;

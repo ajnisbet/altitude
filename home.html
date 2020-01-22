@@ -69,7 +69,7 @@ GET https://api.topodata.io/v1/elevation/78.456,36.345</pre><hr>
 
         <section class="features-section">
             <div class="container">
-                <h2 class="section-heading">Features</h2>
+                <!-- <h2 class="section-heading">Features</h2> -->
                 <div class="row">
                     <div class="col-md-4 feature">
                         <img src="/static/img/icons8-uv/globe-asia.png" alt="" class="feature-icon">
@@ -109,61 +109,117 @@ GET https://api.topodata.io/v1/elevation/78.456,36.345</pre><hr>
         <section class="pricing-section">
             <div class="container">
                 <h2 class="section-heading">Pricing</h2>
-                <p class="pricing-intro">We offer one simple, usage-based pricing plan.</p>
+                <!-- <p class="pricing-intro">We offer one simple, usage-based pricing plan.</p> -->
                 <div class="row">
-                    <div class="pricing-price col-md-4 offset-md-4">
-                        <div class="pricing-meat">
-                            <span class="pricing-amount">$0.05</span> <span class="pricing-unit"> / 1,000 requests</span>
+                    <div class="pricing-wrapper col-md-3">
+                        <div class="pricing-price">
+                            <div class="pricing-name">Hobby</div>
+                            <div class="pricing-meat">
+                                <span class="pricing-amount">$15</span> <span class="pricing-unit"> / month</span>
+                            </div>
+                            <ul class="list-unstyled pricing-details">
+                                <li class="pricing-detail">100,000 requests.</li>
+                                <li class="pricing-detail">Email support.</li>
+                                <li class="pricing-detail">&nbsp;</li>
+                            </ul>
+                            <a href="#!" class="btn btn-primary intro-btn pricing-btn">Get an API key</a>
                         </div>
-                        <ul class="list-unstyled pricing-details">
-                            <li class="pricing-detail">First 2,500 requests per day are free.</li>
-                            <li class="pricing-detail">Email support.</li>
-                            <li class="pricing-detail">Max 10 requests per second.</li>
-                        </ul>
-                        <a href="#!" class="btn btn-primary intro-btn">Get an API key</a>
-                        <!-- <span class="pricing-amount">$0</span> <span class="pricing-unit">first 2500 requests / day</span> -->
-                        <!-- <br> <span class="pricing-amount">+</span> <br> -->
+                    </div>
+                    <div class="pricing-wrapper col-md-3">
+                        <div class="pricing-price">
+                            <div class="pricing-name">Startup</div>
+                            <div class="pricing-meat">
+                                <span class="pricing-amount">$50</span> <span class="pricing-unit"> / month</span>
+                            </div>
+                            <ul class="list-unstyled pricing-details">
+                                <li class="pricing-detail">500,000 requests.</li>
+                                <li class="pricing-detail">Email support.</li>
+                                <li class="pricing-detail">&nbsp;</li>
+                            </ul>
+                            <a href="#!" class="btn btn-primary intro-btn pricing-btn">Get an API key</a>
+                        </div>
+                    </div>
+                    <div class="pricing-wrapper col-md-3">
+                        <div class="pricing-price">
+                            <div class="pricing-name">Business</div>
+                            <div class="pricing-meat">
+                                <span class="pricing-amount">$90</span> <span class="pricing-unit"> / month</span>
+                            </div>
+                            <ul class="list-unstyled pricing-details">
+                                <li class="pricing-detail">1,000,000 requests.</li>
+                                <li class="pricing-detail">Email support.</li>
+                                <li class="pricing-detail">&nbsp;</li>
+                            </ul>
+                            <a href="#!" class="btn btn-primary intro-btn pricing-btn">Get an API key</a>
+                        </div>
+                    </div>
+                    <div class="pricing-wrapper col-md-3">
+                        <div class="pricing-price">
+                            <div class="pricing-name">Enterprise</div>
+                            <div class="pricing-meat">
+                                <span class="pricing-unit">Contact us for pricing.</span>
+                            </div>
+                            <ul class="list-unstyled pricing-details">
+                                <li class="pricing-detail">Unlimited requests.</li>
+                                <li class="pricing-detail">Priority support.</li>
+                                <li class="pricing-detail">SLA.</li>
+
+                            </ul>
+                            <a href="#!" class="btn btn-primary intro-btn pricing-btn">Contact us</a>
+                        </div>
                     </div>
                 </div>
                     
-                </div>
-
-                <div class="row pricing-prices">
-                    <div class="col-md-3 offset-md-2 price text-center">
-                        <div class="price-name">Standard</div>
-                            <div class="card-header">Standard</div>
-                            <div class="card-body">
-                                <h2>$0.53 <span class="text-muted">/ 1000 requests</span></h2>
-                                <ul class="list-unstyled">
-                                    <li>Email support</li>
-                                    <li>10 requests / second</li>
-                                </ul>
-                                <a href="#!" class="btn btn-primary">Get an API key</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 offset-md-2 price text-center">
-                        <div class="card">
-                            <div class="card-header">Enterprise</div>
-                            <div class="card-body">
-                                <ul class="list-unstyled">
-                                    <li>Priority support</li>
-                                    <li>High request limit</li>
-                                    <li>Fixed pricing option</li>
-                                    <li>SLA</li>
-                                </ul>
-                                <a href="#!" class="btn btn-primary">Contact us</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <p class="pricing-blurb">Want some free quota for evalution? Just <a href="#!">reach out to us</a>!</p>
             </div>
         </section>
 
         <section class="get-started-section">
             <div class="container">
-                <h2 class="section-heading">Get Started</h2>
+                <h2 class="section-heading">Get started in minutes</h2>
                 <p>See the <a href="#!">full docs</a> for batch requests, Google Maps Elevation compatability, and more.</p>
+
+                <div class="codewindow codewindow--getstarted">
+                <ul class="codewindow-header">
+                    <li><a href="#!" data-resLangName="curl" class="selected">curl</a></li>
+                    <li><a href="#!" data-resLangName="python">Python</a></li>
+                    <li><a href="#!" data-resLangName="ruby">Ruby</a></li>
+                </ul>
+                <pre class="codewindow-main codewindow-main--visible" data-resLang="curl">curl https://api.newrecruit.io/v0/parse
+    -X POST
+    -F <span class="o">file</span><span class="p">=</span>@resume.pdf
+    -H <span class="y">"x-api-key: 3ax6xnjp29jd6fds4gc373sgvjxteol0"</span>
+                </pre>
+                <pre class="codewindow-main" data-resLang="python"><span class="p">import</span> requests
+
+url <span class="p">=</span> <span class="y">'https://api.newrecruit.io/v0/parse'</span>
+path <span class="p">=</span> <span class="y">'resume.pdf'</span>
+api_key <span class="p">=</span> <span class="y">'3ax6xnjp29jd6fds4gc373sgvjxteol0'</span>
+
+
+result = requests.<span class="b">post</span>(
+    url,
+    <span class="o">files</span> <span class="p">=</span> {<span class="y">'file'</span>: <span class="b">open</span>(path, <span class="y">'rb'</span>)},
+    <span class="o">headers</span> <span class="p">=</span> {<span class="y">'x-api-key'</span>: api_key},
+)
+
+</pre>
+                <pre class="codewindow-main" data-resLang="ruby">require 'rest-client'
+
+request = RestClient::Request.new(
+    :method => :post,
+    :url => 'https://api.newrecruit.io/v0/parse',
+    :headers => {:'x-api-key' => '3ax6xnjp29jd6fds4gc373sgvjxteol0'},
+    :payload => {
+        :multipart => true,
+        :file => File.new('resume.pdf', 'rb')
+    }
+)
+
+response = request.execute</pre>
+            </div>
+
+
                     <pre>Python  Javascript  Bash  Java  </pre>
                 <hr>
                 <div>
@@ -239,68 +295,75 @@ result = requests.post(
                 </div>
             </div>
         </section>
+    </body>
+    <script type="text/javascript">
+        (function() {
 
-        <!-- <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <h1 class="heading">Altitude</h1>
-                    <h2 class="subheading">Topographical Elevation API</h2>
-                </div>
-            </div>
-            <div class="row stats">
-                <div class="col-sm">
-                    <dl class="stat">
-                        <dt>Resolution</dt>
-                        <dd>1′ (~1.8km)</dd>
-                    </dl>
-                </div>
-                <div class="col-sm">
-                    <dl class="stat">
-                        <dt>Extent</dt>
-                        <dd>-90,-180 → 90,180</dd>
-                    </dl>
-                </div>
-                <div class="col-sm">
-                    <dl class="stat">
-                        <dt>Datum</dt>
-                        <dd>WGS 84</dd>
-                    </dl>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm">
-                    <p>Altitude is an <a href="https://github.com/ajnisbet/altitude">open source</a> elevation JSON API.</p>
-                    <p>Data is taken from the <a href="https://www.ngdc.noaa.gov/mgg/global/global.html">ETOPO1 ICE</a> 1 arc-minute dataset. In addition to land topography, bathymetry is given for ocean locations, and ice surface height is given for the Antarctic and Greenland ice sheets.</p>
-                    <p>The elevation value is bilinearly interpolated from the surrounding four grid points.</p>
-                    <h3>Usage</h3>
-                    <p>The API has a single endpoint, which is compatible with the Google Elevation API.</p>
-                    <pre><code>GET https://altitude.andrewnisbet.nz/api/v1/json?locations=37.43831,-122.16416|37.32056,-122.21364</code></pre>
-                    <p>The response returns the elevation above sea level in metres for each point.</p>
-                    <pre><code>{
-    "results": [
-        {
-            "elevation": 12, 
-            "location": {
-                "lat": 37.43831, 
-                "lon": -122.16416
-            }, 
-            "resolution": 1800
-        }, 
-        {
-            "elevation": 500, 
-            "location": {
-                "lat": 37.32056, 
-                "lon": -122.21364
-            }, 
-            "resolution": 1800
-        }
-    ], 
-    "status": "OK"
-}</code></pre>
+            // Output code switcher.
+            var esOut = document.querySelectorAll('[data-outLangName]');
+            function changeOutLang() {
+                for (var i = 0; i < esOut.length; i++) {
+                    esOut[i].classList.remove('selected');
+                }
+                this.classList.add('selected');
 
-                    <p>Try it out: <a href="/api/v1/json?locations=37.43831,-122.16416|37.32056,-122.21364">/api/v1/json?locations=37.43831,-122.16416|37.32056,-122.21364</a>.</p>
-                </div>
-            </div>
-        </div>
-    </body> -->
+                var cs = document.querySelectorAll('.codewindow-main--visible[data-outLang]');
+                for (var i = 0; i < cs.length; i++) {
+                    cs[i].classList.remove('codewindow-main--visible');
+                }
+
+                var e = document.querySelector('[data-outLang="' + this.getAttribute('data-outLangName') + '"]');
+                e.classList.add('codewindow-main--visible');
+
+            }
+            for (var i = 0; i < esOut.length; i++) {
+                esOut[i].addEventListener('click', changeOutLang);
+            }
+
+            // Response code switcher.
+            var esRes = document.querySelectorAll('[data-resLangName]');
+            function changeResLang() {
+                for (var i = 0; i < esRes.length; i++) {
+                    esRes[i].classList.remove('selected');
+                }
+                this.classList.add('selected');
+
+                var cs = document.querySelectorAll('.codewindow-main--visible[data-resLang]');
+                for (var i = 0; i < cs.length; i++) {
+                    cs[i].classList.remove('codewindow-main--visible');
+                }
+
+                var e = document.querySelector('[data-resLang="' + this.getAttribute('data-resLangName') + '"]');
+                e.classList.add('codewindow-main--visible');
+
+            }
+            for (var i = 0; i < esRes.length; i++) {
+                esRes[i].addEventListener('click', changeResLang);
+            }
+
+            // // Request code switcher.
+            // var es = document.querySelectorAll('[data-resLangName]');
+            // function changeLang() {
+            //  for (var i = 0; i < es.length; i++) {
+            //      es[i].classList.remove('selected');
+            //  }
+            //  this.classList.add('selected');
+
+            //  var cs = document.querySelectorAll('.getstarted-codesample-code--visible');
+            //  for (var i = 0; i < cs.length; i++) {
+            //      cs[i].classList.remove('getstarted-codesample-code--visible');
+            //  }
+
+            //  var e = document.querySelector('[data-lang="' + this.getAttribute('data-resLangName') + '"]');
+            //  e.classList.add('getstarted-codesample-code--visible');
+
+            // }
+            // var es = document.querySelectorAll('[data-resLangName]');
+            // for (var i = 0; i < es.length; i++) {
+            //  es[i].addEventListener('click', changeLang);
+            // }
+
+        })();
+    </script>
+
 </html>
